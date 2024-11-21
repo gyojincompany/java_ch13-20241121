@@ -34,7 +34,8 @@ public class MainClass1 {
 			System.out.println(name+"/"+age+"/"+addr+"/"+phone+"/"+email);
 			
 		}
-
+		
+		memberDtos.remove(3);//인덱스 3(강감찬) memberDto 객체 삭제
 	}
 
 }
