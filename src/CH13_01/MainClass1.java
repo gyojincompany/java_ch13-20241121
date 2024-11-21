@@ -12,7 +12,7 @@ public class MainClass1 {
 		MemberDto memberDto2 = new MemberDto("이순신", 32, "서울 종로구", "010-1234-7777", "lee@abc.com");
 		MemberDto memberDto3 = new MemberDto("김유신", 41, "서울 은평구", "010-1234-5555", "kim@abc.com");
 		
-		int[] arr = {1,2,3,4};
+		//int[] arr = {1,2,3,4};
 		
 		List<MemberDto> memberDtos = new ArrayList<MemberDto>();
 		// MemberDto 클래스로 만든 객체를 모으기 위한(컬렉션) 큰 박스 자료타입 list 선언
@@ -36,6 +36,16 @@ public class MainClass1 {
 		}
 		
 		memberDtos.remove(3);//인덱스 3(강감찬) memberDto 객체 삭제
+		System.out.println("------------------------------");
+		for(MemberDto memberDto:memberDtos) { //향상된 for문
+			String name = memberDto.getMname();
+			int age = memberDto.getMage();
+			String addr = memberDto.getMaddr();
+			String phone = memberDto.getMphone();
+			String email = memberDto.getMemail();
+			
+			System.out.println(name+"/"+age+"/"+addr+"/"+phone+"/"+email);
+		}
 	}
 
 }
