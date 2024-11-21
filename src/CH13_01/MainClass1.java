@@ -22,7 +22,7 @@ public class MainClass1 {
 		memberDtos.add(memberDto3);
 		memberDtos.add(new MemberDto("강감찬", 31, "인천 미추홀구", "010-1234-5588", "kang@abc.com"));
 		
-		MemberDto memberDto4 = memberDtos.get(3);//김유신 memberDto3 객체 반환
+		MemberDto memberDto4 = memberDtos.get(3);//강감찬 memberDto4 객체 반환
 		
 		for (int i=0;i<memberDtos.size();i++) { // i=0 1 2 3
 			String name = memberDtos.get(i).getMname();
